@@ -1,0 +1,147 @@
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "GeraldtonLight";
+  src: url(/fonts/GeraldtonLight.otf);
+}
+@font-face {
+  font-family: "MarlinRegular";
+  src: url(/fonts/FontMesa\ -\ MarlinSoftBasic-Regular.otf);
+}
+@font-face {
+  font-family: "MarlinItalic";
+  src: url(/fonts/FontMesa\ -\ MarlinSoftBasic-RegularItalic.otf);
+}
+@font-face {
+  font-family: "MarlinSlanRegular";
+  src: url(/fonts/FontMesa\ -\ MarlinSoftBasicSlant-Regular.otf);
+}
+@font-face {
+  font-family: "Futurah";
+  src: url(/fonts/FUTURAH.TTF);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.bg-propio {
+  background-color: coral;
+}
+
+header img {
+  height: 64px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 1.75rem;
+  font-family: "GeraldtonLight";
+}
+li a {
+  color: #373737;
+}
+
+.container-titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 999;
+}
+
+.container-titulo h1 {
+  font-size: 80px;
+  white-space: nowrap;
+  z-index: 999;
+}
+
+.container-titulo {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Futurah";
+  text-shadow: 3px 3px 6px black;
+  z-index: 999;
+}
+.container-img {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.6);
+}
+
+.container-img img {
+  max-width: 450px;
+  width: 100%;
+}
+
+.botonunitealteam {
+  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section button {
+  padding: 15px 30px;
+  border: 1px solid #995309;
+  border-radius: 6px;
+  background-color: #ee7410;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+}
+section button:hover {
+  background-color: white;
+  color: black;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.logo-wp img {
+  height: 64px;
+  z-index: 1;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  margin: 10px;
+}
+
+footer {
+  background-color: coral;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+footer img {
+  height: 80px;
+  width: 80px;
+  justify-items: center;
+  position: relative;
+  left: 630px;
+}
+.texto-redes {
+  text-align: center;
+}
+ul {
+  justify-content: center;
+}
+
+.texto-final {
+  text-align: center;
+}
