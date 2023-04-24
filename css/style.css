@@ -54,13 +54,12 @@ li a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 999;
+  z-index: 1;
 }
 
 .container-titulo h1 {
   font-size: 80px;
-  white-space: nowrap;
-  z-index: 999;
+  z-index: 1;
 }
 
 .container-titulo {
@@ -69,7 +68,7 @@ li a {
   font-size: 3rem;
   font-family: "Futurah";
   text-shadow: 3px 3px 6px black;
-  z-index: 999;
+  z-index: 1;
 }
 .container-img {
   display: flex;
@@ -129,11 +128,11 @@ footer {
 }
 
 footer img {
-  height: 80px;
-  width: 80px;
-  justify-items: center;
-  position: relative;
-  left: 630px;
+  width: 64px;
+}
+.logo-footer{
+  text-align: center;
+
 }
 .texto-redes {
   text-align: center;
@@ -144,4 +143,30 @@ ul {
 
 .texto-final {
   text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .container-img {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .imagen1 {
+    display: none;
+  }
+  .imagen3 {
+    display: none;
+  }
+  .container-titulo {
+    width: 100%;
+   
+  }
+  .container-titulo h1 {
+    font-size: 35px;
+   
+  }
+  .navbar-expand-lg {
+    z-index: 3;
+  }
+  }
 }
