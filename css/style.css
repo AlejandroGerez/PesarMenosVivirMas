@@ -4,23 +4,20 @@ html {
 
 @font-face {
   font-family: "GeraldtonLight";
-  src: url(/fonts/GeraldtonLight.otf);
+  src: url(../fonts/GeraldtonLight.otf);
 }
 @font-face {
   font-family: "MarlinRegular";
-  src: url(/fonts/FontMesa\ -\ MarlinSoftBasic-Regular.otf);
+  src: url(../fonts/FontMesa\ -\ MarlinSoftBasic-Regular.otf);
 }
 @font-face {
   font-family: "MarlinItalic";
-  src: url(/fonts/FontMesa\ -\ MarlinSoftBasic-RegularItalic.otf);
+  src: url(../fonts/FontMesa\ -\ MarlinSoftBasic-RegularItalic.otf);
 }
-@font-face {
-  font-family: "MarlinSlanRegular";
-  src: url(/fonts/FontMesa\ -\ MarlinSoftBasicSlant-Regular.otf);
-}
+
 @font-face {
   font-family: "Futurah";
-  src: url(/fonts/FUTURAH.TTF);
+  src: url(../fonts/FUTURAH.TTF);
 }
 
 * {
@@ -29,6 +26,7 @@ html {
   box-sizing: border-box;
   text-decoration: none;
 }
+
 .bg-propio {
   background-color: coral;
 }
@@ -54,6 +52,11 @@ li a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Futurah";
+  text-shadow: 3px 3px 6px black;
   z-index: 1;
 }
 
@@ -62,14 +65,6 @@ li a {
   z-index: 1;
 }
 
-.container-titulo {
-  color: white;
-  font-weight: bold;
-  font-size: 3rem;
-  font-family: "Futurah";
-  text-shadow: 3px 3px 6px black;
-  z-index: 1;
-}
 
 .container-img {
   display: flex;
