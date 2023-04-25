@@ -73,14 +73,17 @@ li a {
 .container-img {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   filter: brightness(0.6);
 }
 
 .container-img img {
   max-width: 450px;
-  width: 100%;
+  width: 100vh;
+}
+.imagen1{
+  height: 100%;
 }
 
 .botonunitealteam {
