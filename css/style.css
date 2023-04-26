@@ -120,7 +120,7 @@ section button:hover {
 
 footer {
   background-color: coral;
-  height: 100%;
+  height: auto;
   width: 100%;
   display: inline-block;
 }
@@ -163,4 +163,39 @@ ul {
   .navbar-expand-lg {
     z-index: 3;
   }
+}
+
+._container-sobremi {
+  display: grid;
+  height: 500px;
+  width: 100%;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr;
+
+  grid-template-areas:
+    "carrousel-1 titulo-2"
+    "carrousel-1 texto-3"
+    "carrousel-1 texto-4";
+}
+
+.carrousel-1 {
+  grid-area: carrousel-1;
+}
+
+.titulo-2 {
+  grid-area: titulo-2;
+  text-align: center;
+  font-family: "Futurah";
+}
+
+.texto-3 {
+  grid-area: texto-3;
+  text-align: center;
+  font-family: "MarlinRegular";
+}
+
+.texto-4 {
+  grid-area: texto-4;
+  text-align: center;
+  font-family: "MarlinRegular";
 }
