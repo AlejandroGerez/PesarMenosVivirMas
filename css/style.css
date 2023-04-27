@@ -174,7 +174,7 @@ ul {
 ._container-sobremi {
   display: grid;
   background-image: linear-gradient(#ff7f50, #ffffff);
-  height: 500px;
+  height: auto;
   width: 100%;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: auto;
@@ -192,6 +192,7 @@ ul {
   margin-top: 30px;
   margin-left: 20px;
   margin-right: 10px;
+  margin-bottom: 20px;
   box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
   -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
   -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
@@ -233,24 +234,20 @@ ul {
   }
   .carrusel-1 {
     grid-area: carrusel-1;
-    height: 200px;
-    max-width: auto;
+    height: 300px;
+    width: auto;
     box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
     -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
     -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-    width: 100%;
   }
   .titulo-2 {
     grid-area: titulo-2;
-    width: 100%;
   }
   .texto-3 {
     grid-area: texto-3;
-    width: 100%;
   }
   .texto-4 {
     grid-area: texto-4;
-    width: 100%;
   }
 }
 .titulo_t {
