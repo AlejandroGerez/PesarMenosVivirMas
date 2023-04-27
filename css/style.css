@@ -119,10 +119,16 @@ section button:hover {
 }
 
 footer {
-  background-color: #ff7f50;
   height: auto;
   width: 100%;
   display: inline-block;
+}
+
+.footer-color-1 {
+  background-color: #ff7f50;
+}
+.footer-color-2 {
+  background-image: linear-gradient(#ffffff, #ff7f50);
 }
 
 footer img {
@@ -174,13 +180,13 @@ ul {
   grid-template-rows: 2fr 2fr 2fr;
 
   grid-template-areas:
-    "carrousel-1 titulo-2"
-    "carrousel-1 texto-3"
-    "carrousel-1 texto-4";
+    "carrusel-1 titulo-2"
+    "carrusel-1 texto-3"
+    "carrusel-1 texto-4";
 }
 
-.carrousel-1 {
-  grid-area: carrousel-1;
+.carrusel-1 {
+  grid-area: carrusel-1;
 }
 
 .titulo-2 {
@@ -200,11 +206,6 @@ ul {
   grid-area: texto-4;
   text-align: center;
   font-family: "MarlinRegular";
-}
-
-.carousel-item {
-  height: 495px;
-  margin-top: 2px;
 }
 
 @media screen and (max-width: 576px) {
