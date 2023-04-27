@@ -89,7 +89,7 @@ li a {
   transform: translateX(-50%);
 }
 
-section button {
+.boton-unite {
   padding: 15px 30px;
   border: 1px solid #995309;
   border-radius: 6px;
@@ -103,7 +103,7 @@ section button {
   -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
 }
-section button:hover {
+.boton-unite:hover {
   background-color: white;
   color: black;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
@@ -176,8 +176,8 @@ ul {
   background-image: linear-gradient(#ff7f50, #ffffff);
   height: 500px;
   width: 100%;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto;
 
   grid-template-areas:
     "carrusel-1 titulo-2"
@@ -187,6 +187,14 @@ ul {
 
 .carrusel-1 {
   grid-area: carrusel-1;
+  max-height: 450px;
+  max-width: auto;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+  -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+  -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
 }
 
 .titulo-2 {
@@ -207,11 +215,51 @@ ul {
   text-align: center;
   font-family: "MarlinRegular";
 }
+.foto-1,
+.foto-2,
+.foto-3 {
+  height: 450px;
+}
 
 @media screen and (max-width: 576px) {
   ._container-sobremi {
-    height: 500px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "carrusel-1"
+      "titulo-2"
+      "texto-3"
+      "texto-4";
   }
+  .carrusel-1 {
+    grid-area: carrusel-1;
+    height: 200px;
+    max-width: auto;
+    box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+    -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+    -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+    width: 100%;
+  }
+  .titulo-2 {
+    grid-area: titulo-2;
+    width: 100%;
+  }
+  .texto-3 {
+    grid-area: texto-3;
+    width: 100%;
+  }
+  .texto-4 {
+    grid-area: texto-4;
+    width: 100%;
+  }
+}
+.titulo_t {
+  font-family: "Futurah";
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5px;
+}
+.carrusel-2 {
+  height: auto;
+  width: 500px;
 }
