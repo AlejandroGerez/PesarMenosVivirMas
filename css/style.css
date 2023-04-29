@@ -225,7 +225,7 @@ ul {
 @media screen and (max-width: 576px) {
   ._container-sobremi {
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
       "carrusel-1"
       "titulo-2"
