@@ -71,6 +71,10 @@ li a {
   justify-content: center;
   align-items: center;
   filter: brightness(0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.container-img img:hover {
+  transform: scale(1.05);
 }
 
 .container-img img {
