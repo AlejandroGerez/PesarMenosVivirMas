@@ -201,6 +201,10 @@ ul {
   -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
   -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
 }
+.foto-4 iframe {
+  height: 450px;
+  width: 780px;
+}
 
 .titulo-2 {
   grid-area: titulo-2;
@@ -243,6 +247,16 @@ ul {
     box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
     -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
     -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+  }
+  .foto-4 iframe {
+    width: 455px;
+    height: 360px;
+  }
+  .foto-2 img {
+    height: 360px;
+  }
+  .foto-3 img {
+    height: 360px;
   }
   .titulo-2 {
     grid-area: titulo-2;
