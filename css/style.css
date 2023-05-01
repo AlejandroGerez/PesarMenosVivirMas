@@ -275,9 +275,20 @@ ul {
   margin-top: 5px;
 }
 .carrusel-2 {
-  height: auto;
-  width: 500px;
+  max-width: 100vh;
+  max-width: 100vh;
 }
+.boton-antes-y-despues button {
+  padding: 15px 30px;
+  border: 1px solid #995309;
+  border-radius: 6px;
+  background-color: #ee7410;
+
+  font-size: 2rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 .img-contacto {
   height: 250px;
 }
