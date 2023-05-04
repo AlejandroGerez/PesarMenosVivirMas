@@ -80,6 +80,7 @@ li a {
 .container-img img {
   max-width: 450px;
   width: 100vh;
+  transition: all 2s;
 }
 .imagen1 {
   height: 100%;
