@@ -1,0 +1,57 @@
+main {
+  ._container-sobremi {
+    display: grid;
+    background-image: linear-gradient($color-primary, $color-secundary);
+    height: auto;
+    width: 100%;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "carrusel-1 titulo-2"
+      "carrusel-1 texto-3"
+      "carrusel-1 texto-4";
+
+    .carrusel-1 {
+      grid-area: carrusel-1;
+      max-height: 450px;
+      max-width: auto;
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+      -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+      -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+
+      .foto-4 iframe {
+        height: 450px;
+        width: 780px;
+      }
+    }
+
+    .titulo-2 {
+      grid-area: titulo-2;
+      text-align: center;
+      font-family: "Futurah";
+      margin-top: 50px;
+    }
+
+    .texto-3 {
+      grid-area: texto-3;
+      text-align: center;
+      font-family: "MarlinRegular";
+    }
+
+    .texto-4 {
+      grid-area: texto-4;
+      text-align: center;
+      font-family: "MarlinRegular";
+    }
+
+    .foto-1,
+    .foto-2,
+    .foto-3 {
+      height: 450px;
+    }
+  }
+}

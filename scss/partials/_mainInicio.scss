@@ -1,0 +1,81 @@
+main {
+  .container-titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: "Futurah";
+    text-shadow: 3px 3px 6px black;
+    z-index: 1;
+
+    h1 {
+      font-size: 80px;
+      z-index: 1;
+    }
+  }
+
+  .logo-wp img {
+    height: 64px;
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    margin: 10px;
+  }
+
+  .container-img {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    img {
+      max-width: 450px;
+      width: 100vh;
+      transition: all 2s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .imagen1 {
+      height: 100%;
+    }
+  }
+
+  .botonunitealteam {
+    display: inline-block;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.boton-unite {
+  padding: 15px 30px;
+  border: 1px solid #995309;
+  border-radius: 6px;
+  background-color: #ee7410;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+
+  &:hover {
+    background-color: white;
+    color: black;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  }
+}

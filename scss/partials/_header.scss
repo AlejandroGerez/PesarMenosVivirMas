@@ -1,0 +1,21 @@
+header {
+  background-color: $color-primary;
+  img {
+    height: 64px;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      font-size: 1.75rem;
+      font-family: "GeraldtonLight";
+      li {
+        a {
+          color: #373737;
+        }
+      }
+    }
+  }
+}

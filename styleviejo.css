@@ -2,13 +2,6 @@ html {
   font-size: 62.5%;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
 @font-face {
   font-family: "GeraldtonLight";
   src: url(../fonts/GeraldtonLight.otf);
@@ -21,28 +14,39 @@ html {
   font-family: "MarlinItalic";
   src: url(../fonts/FontMesa\ -\ MarlinSoftBasic-RegularItalic.otf);
 }
+
 @font-face {
   font-family: "Futurah";
   src: url(../fonts/FUTURAH.TTF);
 }
-header {
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.bg-propio {
   background-color: coral;
 }
+
 header img {
   height: 64px;
 }
-header nav ul {
+
+ul {
   display: flex;
   list-style: none;
   gap: 20px;
   font-size: 1.75rem;
   font-family: "GeraldtonLight";
 }
-header nav ul li a {
+li a {
   color: #373737;
 }
 
-main .container-titulo {
+.container-titulo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,19 +59,13 @@ main .container-titulo {
   text-shadow: 3px 3px 6px black;
   z-index: 1;
 }
-main .container-titulo h1 {
+
+.container-titulo h1 {
   font-size: 80px;
   z-index: 1;
 }
-main .logo-wp img {
-  height: 64px;
-  z-index: 1;
-  position: fixed;
-  right: 0;
-  bottom: 20px;
-  margin: 10px;
-}
-main .container-img {
+
+.container-img {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -75,18 +73,20 @@ main .container-img {
   filter: brightness(0.6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-main .container-img img {
+.container-img img:hover {
+  transform: scale(1.05);
+}
+
+.container-img img {
   max-width: 450px;
   width: 100vh;
   transition: all 2s;
 }
-main .container-img img:hover {
-  transform: scale(1.05);
-}
-main .container-img .imagen1 {
+.imagen1 {
   height: 100%;
 }
-main .botonunitealteam {
+
+.botonunitealteam {
   display: inline-block;
   position: absolute;
   bottom: 10%;
@@ -114,38 +114,42 @@ main .botonunitealteam {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
 
+.logo-wp img {
+  height: 64px;
+  z-index: 1;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  margin: 10px;
+}
+
 footer {
   height: auto;
   width: 100%;
   display: inline-block;
 }
-footer.footer-color-1 {
-  background-color: coral;
+
+.footer-color-1 {
+  background-color: #ff7f50;
 }
-footer.footer-color-2 {
-  background-image: linear-gradient(#ffffff, coral);
+.footer-color-2 {
+  background-image: linear-gradient(#ffffff, #ff7f50);
 }
+
 footer img {
   width: 64px;
 }
-footer .logo-footer {
+.logo-footer {
   text-align: center;
 }
-footer .texto-redes {
+.texto-redes {
   text-align: center;
 }
-footer ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  font-size: 1.75rem;
-  font-family: "GeraldtonLight";
+ul {
   justify-content: center;
 }
-footer ul li i {
-  color: #373737;
-}
-footer .texto-final {
+
+.texto-final {
   text-align: center;
 }
 
@@ -155,64 +159,38 @@ footer .texto-final {
     width: 100%;
     height: auto;
   }
-  .imagen1,
+  .imagen1 {
+    display: none;
+  }
   .imagen3 {
     display: none;
   }
   .container-titulo {
     width: 100%;
   }
-  .h1 {
+  .container-titulo h1 {
     font-size: 35px;
   }
   .navbar-expand-lg {
     z-index: 3;
   }
 }
-@media screen and (max-width: 576px) {
-  ._container-sobremi {
-    grid-template-columns: auto;
-    grid-template-rows: 1fr;
-    grid-template-areas: "carrusel-1" "titulo-2" "texto-3" "texto-4";
-  }
-  ._container-sobremi .carrusel-1 {
-    grid-area: carrusel-1;
-    height: 300px;
-    width: auto;
-    box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-    -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-    -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-  }
-  ._container-sobremi .foto-4 iframe {
-    width: 455px;
-    height: 360px;
-  }
-  ._container-sobremi .foto-2 img {
-    height: 360px;
-  }
-  ._container-sobremi .foto-3 img {
-    height: 360px;
-  }
-  ._container-sobremi .titulo-2 {
-    grid-area: titulo-2;
-  }
-  ._container-sobremi .texto-3 {
-    grid-area: texto-3;
-  }
-  ._container-sobremi .texto-4 {
-    grid-area: texto-4;
-  }
-}
-main ._container-sobremi {
+
+._container-sobremi {
   display: grid;
-  background-image: linear-gradient(coral, #ffffff);
+  background-image: linear-gradient(#ff7f50, #ffffff);
   height: auto;
   width: 100%;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: auto;
-  grid-template-areas: "carrusel-1 titulo-2" "carrusel-1 texto-3" "carrusel-1 texto-4";
+
+  grid-template-areas:
+    "carrusel-1 titulo-2"
+    "carrusel-1 texto-3"
+    "carrusel-1 texto-4";
 }
-main ._container-sobremi .carrusel-1 {
+
+.carrusel-1 {
   grid-area: carrusel-1;
   max-height: 450px;
   max-width: auto;
@@ -224,53 +202,97 @@ main ._container-sobremi .carrusel-1 {
   -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
   -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
 }
-main ._container-sobremi .carrusel-1 .foto-4 iframe {
+.foto-4 iframe {
   height: 450px;
   width: 780px;
 }
-main ._container-sobremi .titulo-2 {
+
+.titulo-2 {
   grid-area: titulo-2;
   text-align: center;
   font-family: "Futurah";
   margin-top: 50px;
 }
-main ._container-sobremi .texto-3 {
+
+.texto-3 {
   grid-area: texto-3;
   text-align: center;
   font-family: "MarlinRegular";
 }
-main ._container-sobremi .texto-4 {
+
+.texto-4 {
   grid-area: texto-4;
   text-align: center;
   font-family: "MarlinRegular";
 }
-main ._container-sobremi .foto-1,
-main ._container-sobremi .foto-2,
-main ._container-sobremi .foto-3 {
+.foto-1,
+.foto-2,
+.foto-3 {
   height: 450px;
 }
 
-main .titulo_t {
+@media screen and (max-width: 576px) {
+  ._container-sobremi {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "carrusel-1"
+      "titulo-2"
+      "texto-3"
+      "texto-4";
+  }
+  .carrusel-1 {
+    grid-area: carrusel-1;
+    height: 300px;
+    width: auto;
+    box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+    -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+    -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+  }
+  .foto-4 iframe {
+    width: 455px;
+    height: 360px;
+  }
+  .foto-2 img {
+    height: 360px;
+  }
+  .foto-3 img {
+    height: 360px;
+  }
+  .titulo-2 {
+    grid-area: titulo-2;
+  }
+  .texto-3 {
+    grid-area: texto-3;
+  }
+  .texto-4 {
+    grid-area: texto-4;
+  }
+}
+.titulo_t {
   font-family: "Futurah";
   text-align: center;
   font-size: 3rem;
   margin-top: 5px;
 }
-main .carrusel-2 {
+.carrusel-2 {
   max-width: 100vh;
   max-width: 100vh;
 }
-main .boton-antes-y-despues button {
+.boton-antes-y-despues button {
   padding: 15px 30px;
+  border: 1px solid #995309;
+  border-radius: 6px;
+  background-color: #ee7410;
+
   font-size: 2rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-main .img-contacto {
+.img-contacto {
   height: 250px;
 }
-main .containertitulo_ {
+.containertitulo_ {
   font-family: "Futurah";
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+footer {
+  height: auto;
+  width: 100%;
+  display: inline-block;
+
+  &.footer-color-1 {
+    background-color: $color-primary;
+  }
+  &.footer-color-2 {
+    background-image: linear-gradient($color-secundary, $color-primary);
+  }
+
+  img {
+    width: 64px;
+  }
+
+  .logo-footer {
+    text-align: center;
+  }
+
+  .texto-redes {
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.75rem;
+    font-family: "GeraldtonLight";
+    justify-content: center;
+    li {
+      i {
+        color: #373737;
+      }
+    }
+  }
+
+  .texto-final {
+    text-align: center;
+  }
+}

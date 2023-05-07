@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "GeraldtonLight";
+  src: url(../fonts/GeraldtonLight.otf);
+}
+@font-face {
+  font-family: "MarlinRegular";
+  src: url(../fonts/FontMesa\ -\ MarlinSoftBasic-Regular.otf);
+}
+@font-face {
+  font-family: "MarlinItalic";
+  src: url(../fonts/FontMesa\ -\ MarlinSoftBasic-RegularItalic.otf);
+}
+
+@font-face {
+  font-family: "Futurah";
+  src: url(../fonts/FUTURAH.TTF);
+}
