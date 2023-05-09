@@ -79,3 +79,27 @@ main {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   }
 }
+
+@media screen and (max-width: 576px) {
+  .container-img {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagen1,
+  .imagen3 {
+    display: none;
+  }
+
+  .container-titulo {
+    width: 100%;
+  }
+  .h1 {
+    font-size: 1rem;
+  }
+
+  .navbar-expand-lg {
+    z-index: 3;
+  }
+}
