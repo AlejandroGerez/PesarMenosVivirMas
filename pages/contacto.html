@@ -14,7 +14,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
+    <title>P-V+ | Online trainer | Contacto</title>
   </head>
   <body>
     <header>
@@ -35,7 +35,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav text-center">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Inicio</a>
@@ -61,26 +61,27 @@
       </nav>
     </header>
     <main>
-      <div class="containertitulo_ d-flex justify-content-center">
-        <h1>Hit Us Up Anytime</h1>
-        <img class="img-contacto" src="../img/contact/pexels-andres-ayrton-6551426.jpg" alt="">
-      </div>
+      <section class="parallax">
+        <div class="parallax-container">
+          <h1>Hit Us Up Anytime</h1>
+        </div>
+      </section>
       <section>
         <form>
-         <div class="mb-3">
-           <label for="exampleInputEmail1" class="form-label">Email address</label>
-           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+         <div class="form-header">
+          <h1 class="form-title">C<span>ontactame</span></h1>
          </div>
-         <div class="mb-3">
-           <label for="exampleInputPassword1" class="form-label">Password</label>
-           <input type="password" class="form-control" id="exampleInputPassword1">
-         </div>
-         <div class="mb-3 form-check">
-           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-           <label class="form-check-label" for="exampleCheck1">Check me out</label>
-         </div>
-         <button type="submit" class="btn btn-primary">Submit</button>
+
+         <label for="nombre" class="form-label">Nombre y Apellido</label>
+         <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre completo">
+
+         <label for="correo" class="form-label">Correo Electrónico</label>
+         <input type="email" class="form-input" id="correo" placeholder="Escriba su correo electrónico">
+
+         <label for="mensaje" class="form-label">Escribí tu mensaje</label>
+         <textarea name="mensaje" id="form-textarea" placeholder="Tu mensaje"></textarea>
+
+         <input type="submit" class="btn-submit" value="Enviar consulta">
        </form>
       </section>
       <!-- <section>

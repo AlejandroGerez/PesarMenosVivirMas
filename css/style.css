@@ -35,11 +35,12 @@ header nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  font-weight: bold;
   font-family: "GeraldtonLight";
 }
 header nav ul li a {
-  color: #373737;
+  color: w;
 }
 
 main .container-titulo {
@@ -169,6 +170,40 @@ footer .texto-final {
   text-align: center;
 }
 
+@media screen and (max-width: 576px) {
+  main ._container-sobremi {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "carrusel-1" "titulo-2" "texto-3" "texto-4";
+  }
+  main ._container-sobremi .carrusel-1 {
+    grid-area: carrusel-1;
+    height: 300px;
+    width: auto;
+    box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+    -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+    -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+  }
+  main ._container-sobremi .foto-4 iframe {
+    width: 455px;
+    height: 360px;
+  }
+  main ._container-sobremi .foto-2 img {
+    height: 360px;
+  }
+  main ._container-sobremi .foto-3 img {
+    height: 360px;
+  }
+  main ._container-sobremi .titulo-2 {
+    grid-area: titulo-2;
+  }
+  main ._container-sobremi .texto-3 {
+    grid-area: texto-3;
+  }
+  main ._container-sobremi .texto-4 {
+    grid-area: texto-4;
+  }
+}
 main ._container-sobremi {
   display: grid;
   background-image: linear-gradient(coral, #ffffff);
@@ -216,61 +251,176 @@ main ._container-sobremi .foto-3 {
   height: 450px;
 }
 
-@media screen and (max-width: 576px) {
-  ._container-sobremi {
-    grid-template-columns: auto;
-    grid-template-rows: 1fr;
-    grid-template-areas: "carrusel-1" "titulo-2" "texto-3" "texto-4";
-  }
-  ._container-sobremi .carrusel-1 {
-    grid-area: carrusel-1;
-    height: 300px;
-    width: auto;
-    box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-    -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-    -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-  }
-  ._container-sobremi .foto-4 iframe {
-    width: 455px;
-    height: 360px;
-  }
-  ._container-sobremi .foto-2 img {
-    height: 360px;
-  }
-  ._container-sobremi .foto-3 img {
-    height: 360px;
-  }
-  ._container-sobremi .titulo-2 {
-    grid-area: titulo-2;
-  }
-  ._container-sobremi .texto-3 {
-    grid-area: texto-3;
-  }
-  ._container-sobremi .texto-4 {
-    grid-area: texto-4;
-  }
+main {
+  background-image: linear-gradient(coral, #ffffff);
 }
 main .titulo_t {
   font-family: "Futurah";
   text-align: center;
   font-size: 3rem;
-  margin-top: 5px;
 }
-main .carrusel-2 {
-  max-width: 100vh;
-  max-width: 100vh;
+main .container-imagenes {
+  display: grid;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(3, 300px);
 }
-main .boton-antes-y-despues button {
-  padding: 15px 30px;
-  font-size: 2rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+main .container-imagenes img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 576px) {
+  main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+  main img {
+    width: auto;
+    height: auto;
+  }
 }
 
-main .img-contacto {
-  height: 250px;
+main .card {
+  box-shadow: 0px 0px 36px -3px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 0px 0px 36px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 0px 36px -3px rgba(0, 0, 0, 0.66);
+  margin: 20px;
+  background-color: black;
+  border-radius: 10px;
 }
-main .containertitulo_ {
+main .card img {
+  border-radius: 10px;
+}
+main .card h5 {
+  font-size: 1.7rem;
+  text-align: center;
   font-family: "Futurah";
+  color: white;
+}
+main .card .precio-card {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: coral;
+}
+main .card .card-text {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "MarlinRegular";
+}
+main .card .btn {
+  padding: 10px 20px;
+  border: 1px solid #995309;
+  border-radius: 6px;
+  background-color: #ee7410;
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+}
+main .card .btn:hover {
+  background-color: white;
+  color: black;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+main .parallax {
+  width: 99%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: left fixed url(/img/contact/pexels-andres-ayrton-6551426.jpg) no-repeat;
+}
+main h1 {
+  font-weight: bold;
+  font-size: 6rem;
+  color: white;
+  text-shadow: 3px 3px 6px black;
+}
+main form {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+main form .form-label {
+  display: block;
+  color: #ff851b;
+  font-size: 2rem;
+  font-family: "Futurah";
+  position: relative;
+}
+main form .form-input {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ff851b;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+  font-family: "MarlinRegular";
+}
+main form textarea {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ff851b;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+  font-family: "MarlinRegular";
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+main form .btn-submit {
+  width: 100%;
+  font-family: "Futurah";
+  outline: none;
+  background: #ff851b;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+main form .btn-submit:hover {
+  background-color: #fff;
+  color: black;
+}
+main form .form-header .form-title {
+  font-weight: normal;
+  font-family: "Futurah";
+  color: coral;
+  text-align: center;
+  padding: 14px 0;
+}
+main form .form-header .form-title span {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

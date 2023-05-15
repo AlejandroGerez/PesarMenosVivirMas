@@ -1,9 +1,92 @@
 main {
-  .img-contacto {
-    height: 250px;
+  .parallax {
+    width: 99%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: left fixed url(/img/contact/pexels-andres-ayrton-6551426.jpg)
+      no-repeat;
   }
 
-  .containertitulo_ {
-    font-family: "Futurah";
+  h1 {
+    font-weight: bold;
+    font-size: 6rem;
+    color: white;
+    text-shadow: 3px 3px 6px black;
+  }
+  form {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    .form-label {
+      display: block;
+      color: #ff851b;
+      font-size: 2rem;
+      font-family: "Futurah";
+      position: relative;
+    }
+    .form-input {
+      background-color: rgba(0, 0, 0, 0.7);
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #ff851b;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 2px;
+      font-size: 14px;
+      color: #fff;
+      font-family: "MarlinRegular";
+    }
+    textarea {
+      background-color: rgba(0, 0, 0, 0.7);
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #ff851b;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 2px;
+      font-size: 14px;
+      color: #fff;
+      font-family: "MarlinRegular";
+      resize: vertical;
+      max-height: 150px;
+      min-height: 50px;
+    }
+    .btn-submit {
+      width: 100%;
+      font-family: "Futurah";
+      outline: none;
+      background: #ff851b;
+      font-size: 16px;
+      border: none;
+      color: #fff;
+      padding: 15px 0;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      &:hover {
+        background-color: #fff;
+        color: black;
+      }
+    }
+    .form-header {
+      .form-title {
+        font-weight: normal;
+        font-family: "Futurah";
+        color: coral;
+        text-align: center;
+        padding: 14px 0;
+        span {
+          color: white;
+        }
+      }
+    }
   }
 }
