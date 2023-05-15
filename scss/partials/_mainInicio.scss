@@ -10,11 +10,14 @@ main {
     font-size: 3rem;
     font-family: "Futurah";
     text-shadow: 3px 3px 6px black;
-    z-index: 1;
+    z-index: 3;
 
     h1 {
       font-size: 80px;
       z-index: 1;
+      @include mobile {
+        font-size: 40px;
+      }
     }
   }
 
@@ -34,6 +37,12 @@ main {
     align-items: center;
     filter: brightness(0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    @include mobile {
+      .imagen1,
+      .imagen3 {
+        display: none;
+      }
+    }
 
     img {
       max-width: 450px;

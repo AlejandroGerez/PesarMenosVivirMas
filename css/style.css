@@ -1,14 +1,3 @@
-html {
-  font-size: 62.5%;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
 @font-face {
   font-family: "GeraldtonLight";
   src: url(../fonts/GeraldtonLight.otf);
@@ -25,11 +14,26 @@ html {
   font-family: "Futurah";
   src: url(../fonts/FUTURAH.TTF);
 }
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 header {
   background-color: coral;
 }
 header img {
-  height: 64px;
+  height: 74px;
+  transition: all 2s;
+  animation-name: logo-giratorio;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
 }
 header nav ul {
   display: flex;
@@ -43,6 +47,14 @@ header nav ul li a {
   color: w;
 }
 
+@keyframes logo-giratorio {
+  0% {
+    rotate: 360deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
 main .container-titulo {
   position: absolute;
   top: 50%;
@@ -54,11 +66,16 @@ main .container-titulo {
   font-size: 3rem;
   font-family: "Futurah";
   text-shadow: 3px 3px 6px black;
-  z-index: 1;
+  z-index: 3;
 }
 main .container-titulo h1 {
   font-size: 80px;
   z-index: 1;
+}
+@media screen and (max-width: 576px) {
+  main .container-titulo h1 {
+    font-size: 40px;
+  }
 }
 main .logo-wp img {
   height: 64px;
@@ -75,6 +92,12 @@ main .container-img {
   align-items: center;
   filter: brightness(0.6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 576px) {
+  main .container-img .imagen1,
+  main .container-img .imagen3 {
+    display: none;
+  }
 }
 main .container-img img {
   max-width: 450px;
@@ -95,7 +118,7 @@ main .botonunitealteam {
   transform: translateX(-50%);
 }
 
-.boton-unite {
+.boton-unite, main .card .btn {
   padding: 15px 30px;
   border: 1px solid #995309;
   border-radius: 6px;
@@ -109,7 +132,7 @@ main .botonunitealteam {
   -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
 }
-.boton-unite:hover {
+.boton-unite:hover, main .card .btn:hover {
   background-color: white;
   color: black;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
@@ -150,40 +173,6 @@ footer .texto-final {
   text-align: center;
 }
 
-@media screen and (max-width: 576px) {
-  main ._container-sobremi {
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    grid-template-areas: "carrusel-1" "titulo-2" "texto-3" "texto-4";
-  }
-  main ._container-sobremi .carrusel-1 {
-    grid-area: carrusel-1;
-    height: 300px;
-    width: auto;
-    box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-    -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-    -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-  }
-  main ._container-sobremi .foto-4 iframe {
-    width: 455px;
-    height: 360px;
-  }
-  main ._container-sobremi .foto-2 img {
-    height: 360px;
-  }
-  main ._container-sobremi .foto-3 img {
-    height: 360px;
-  }
-  main ._container-sobremi .titulo-2 {
-    grid-area: titulo-2;
-  }
-  main ._container-sobremi .texto-3 {
-    grid-area: texto-3;
-  }
-  main ._container-sobremi .texto-4 {
-    grid-area: texto-4;
-  }
-}
 main ._container-sobremi {
   display: grid;
   background-image: linear-gradient(coral, #ffffff);
@@ -192,6 +181,14 @@ main ._container-sobremi {
   grid-template-columns: 3fr 2fr;
   grid-template-rows: auto;
   grid-template-areas: "carrusel-1 titulo-2" "carrusel-1 texto-3" "carrusel-1 texto-4";
+}
+@media screen and (max-width: 576px) {
+  main ._container-sobremi {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "carrusel-1" "titulo-2" "texto-3" "texto-4";
+  }
 }
 main ._container-sobremi .carrusel-1 {
   grid-area: carrusel-1;
@@ -205,9 +202,21 @@ main ._container-sobremi .carrusel-1 {
   -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
   -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
 }
+@media screen and (max-width: 576px) {
+  main ._container-sobremi .carrusel-1 {
+    height: 300px;
+    width: auto;
+  }
+}
 main ._container-sobremi .carrusel-1 .foto-4 iframe {
   height: 450px;
   width: 780px;
+}
+@media screen and (max-width: 576px) {
+  main ._container-sobremi .carrusel-1 .foto-4 iframe {
+    width: 455px;
+    height: 360px;
+  }
 }
 main ._container-sobremi .titulo-2 {
   grid-area: titulo-2;
@@ -230,6 +239,13 @@ main ._container-sobremi .foto-2,
 main ._container-sobremi .foto-3 {
   height: 450px;
 }
+@media screen and (max-width: 576px) {
+  main ._container-sobremi .foto-1,
+  main ._container-sobremi .foto-2,
+  main ._container-sobremi .foto-3 {
+    height: 360px;
+  }
+}
 
 main {
   background-image: linear-gradient(coral, #ffffff);
@@ -238,6 +254,11 @@ main .titulo_t {
   font-family: "Futurah";
   text-align: center;
   font-size: 3rem;
+}
+@media screen and (max-width: 576px) {
+  main .titulo_t h1 {
+    font-size: 3rem;
+  }
 }
 main .container-imagenes {
   display: grid;
@@ -249,24 +270,23 @@ main .container-imagenes {
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(3, 300px);
 }
+@media screen and (max-width: 576px) {
+  main .container-imagenes {
+    grid-template-columns: 400px;
+    grid-template-rows: auto;
+  }
+}
 main .container-imagenes img {
   width: 100%;
   height: 100%;
 }
+
 @media screen and (max-width: 576px) {
-  main {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    row-gap: 5px;
-    column-gap: 5px;
-  }
-  main img {
-    width: auto;
-    height: auto;
+  main .container-cards {
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 main .card {
   box-shadow: 0px 0px 36px -3px rgba(0, 0, 0, 0.66);
   -webkit-box-shadow: 0px 0px 36px -3px rgba(0, 0, 0, 0.66);
@@ -298,22 +318,7 @@ main .card .card-text {
 }
 main .card .btn {
   padding: 10px 20px;
-  border: 1px solid #995309;
-  border-radius: 6px;
-  background-color: #ee7410;
-  color: #fff;
-  font-size: 1.5rem;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
-}
-main .card .btn:hover {
-  background-color: white;
-  color: black;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  font-size: 1.7rem;
 }
 
 main .parallax {
@@ -339,6 +344,9 @@ main form {
   margin-top: 30px;
   padding-bottom: 30px;
   border-radius: 10px;
+}
+main form .form-title {
+  font-size: 4rem;
 }
 main form .form-label {
   display: block;
@@ -401,26 +409,6 @@ main form .form-header .form-title {
 }
 main form .form-header .form-title span {
   color: white;
-}
-
-@media screen and (max-width: 576px) {
-  .navbar-expand-lg {
-    z-index: 3;
-  }
-  .h1 {
-    font-size: 1rem;
-  }
-  .container-img {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
-  .container-img .imagen1 {
-    display: none;
-  }
-  .container-img .imagen3 {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

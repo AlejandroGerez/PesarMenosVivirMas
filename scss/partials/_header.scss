@@ -1,7 +1,11 @@
 header {
   background-color: $color-primary;
   img {
-    height: 64px;
+    height: 74px;
+    transition: all 2s;
+    animation-name: logo-giratorio;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
   }
 
   nav {
@@ -18,5 +22,14 @@ header {
         }
       }
     }
+  }
+}
+@keyframes logo-giratorio {
+  0% {
+    rotate: (360deg);
+  }
+
+  100% {
+    rotate: (0deg);
   }
 }

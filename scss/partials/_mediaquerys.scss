@@ -1,19 +1,5 @@
-@media screen and (max-width: 576px) {
-  .navbar-expand-lg {
-    z-index: 3;
-  }
-  .h1 {
-    font-size: 1rem;
-  }
-  .container-img {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    .imagen1 {
-      display: none;
-    }
-    .imagen3 {
-      display: none;
-    }
+@mixin mobile {
+  @media screen and (max-width: 576px) {
+    @content;
   }
 }

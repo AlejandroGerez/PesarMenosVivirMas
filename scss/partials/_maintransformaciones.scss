@@ -4,6 +4,11 @@ main {
     font-family: "Futurah";
     text-align: center;
     font-size: 3rem;
+    h1 {
+      @include mobile {
+        font-size: 3rem;
+      }
+    }
   }
   .container-imagenes {
     display: grid;
@@ -14,20 +19,13 @@ main {
     column-gap: 10px;
     grid-template-columns: repeat(4, 300px);
     grid-template-rows: repeat(3, 300px);
+    @include mobile {
+      grid-template-columns: 400px;
+      grid-template-rows: auto;
+    }
   }
   .container-imagenes img {
     width: 100%;
     height: 100%;
-  }
-  @media screen and (max-width: 576px) {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    row-gap: 5px;
-    column-gap: 5px;
-    img {
-      width: auto;
-      height: auto;
-    }
   }
 }
