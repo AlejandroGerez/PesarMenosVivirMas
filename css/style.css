@@ -118,8 +118,7 @@ main .botonunitealteam {
   transform: translateX(-50%);
 }
 
-.boton-unite,
-main .card .btn {
+.boton-unite, main .card .btn {
   padding: 15px 30px;
   border: 1px solid #995309;
   border-radius: 6px;
@@ -133,8 +132,7 @@ main .card .btn {
   -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
 }
-.boton-unite:hover,
-main .card .btn:hover {
+.boton-unite:hover, main .card .btn:hover {
   background-color: white;
   color: black;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
@@ -329,8 +327,7 @@ main .parallax {
   display: flex;
   align-items: center;
   justify-content: end;
-  background: left fixed url(../img/contact/pexels-andres-ayrton-6551426.jpg)
-    no-repeat;
+  background: left fixed url(../img/contact/pexels-andres-ayrton-6551426.jpg) no-repeat;
 }
 main h1 {
   font-weight: bold;
