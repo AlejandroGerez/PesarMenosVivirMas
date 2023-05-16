@@ -2,7 +2,7 @@ main {
   ._container-sobremi {
     display: grid;
     background-image: linear-gradient($color-primary, $color-secundary);
-    height: auto;
+    height: 100%;
     width: 100%;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
@@ -12,6 +12,8 @@ main {
       "carrusel-1 texto-4";
     @include mobile {
       display: grid;
+      height: auto;
+      width: 475px;
       grid-template-columns: auto;
       grid-template-rows: auto;
       grid-template-areas:

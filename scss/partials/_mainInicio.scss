@@ -1,16 +1,16 @@
 main {
   .container-titulo {
+    display: inline-block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
     text-align: center;
+    margin-top: 200px;
     color: white;
     font-weight: bold;
     font-size: 3rem;
     font-family: "Futurah";
     text-shadow: 3px 3px 6px black;
-    z-index: 3;
+    z-index: 1;
 
     h1 {
       font-size: 80px;
@@ -61,30 +61,27 @@ main {
 
   .botonunitealteam {
     display: inline-block;
+    margin-top: 400px;
     position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
   }
-}
-
-.boton-unite {
-  padding: 15px 30px;
-  border: 1px solid #995309;
-  border-radius: 6px;
-  background-color: #ee7410;
-  color: #fff;
-  font-size: 2rem;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
-
-  &:hover {
-    background-color: white;
-    color: black;
+  .boton-unite {
+    padding: 15px 30px;
+    border: 1px solid #995309;
+    border-radius: 6px;
+    background-color: #ee7410;
+    color: #fff;
+    font-size: 2rem;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
+
+    &:hover {
+      background-color: white;
+      color: black;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    }
   }
 }

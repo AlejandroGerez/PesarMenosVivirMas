@@ -2,6 +2,8 @@ footer {
   height: auto;
   width: 100%;
   display: inline-block;
+  @include mobile {
+  }
 
   &.footer-color-1 {
     background-color: $color-primary;

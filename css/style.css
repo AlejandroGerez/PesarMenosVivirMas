@@ -56,17 +56,17 @@ header nav ul li a {
   }
 }
 main .container-titulo {
+  display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
   text-align: center;
+  margin-top: 200px;
   color: white;
   font-weight: bold;
   font-size: 3rem;
   font-family: "Futurah";
   text-shadow: 3px 3px 6px black;
-  z-index: 3;
+  z-index: 1;
 }
 main .container-titulo h1 {
   font-size: 80px;
@@ -112,13 +112,10 @@ main .container-img .imagen1 {
 }
 main .botonunitealteam {
   display: inline-block;
+  margin-top: 400px;
   position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
 }
-
-.boton-unite, main .card .btn {
+main .boton-unite, main .card .btn {
   padding: 15px 30px;
   border: 1px solid #995309;
   border-radius: 6px;
@@ -132,7 +129,7 @@ main .botonunitealteam {
   -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
 }
-.boton-unite:hover, main .card .btn:hover {
+main .boton-unite:hover, main .card .btn:hover {
   background-color: white;
   color: black;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
@@ -176,7 +173,7 @@ footer .texto-final {
 main ._container-sobremi {
   display: grid;
   background-image: linear-gradient(coral, #ffffff);
-  height: auto;
+  height: 100%;
   width: 100%;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: auto;
@@ -185,6 +182,8 @@ main ._container-sobremi {
 @media screen and (max-width: 576px) {
   main ._container-sobremi {
     display: grid;
+    height: auto;
+    width: 475px;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: "carrusel-1" "titulo-2" "texto-3" "texto-4";
