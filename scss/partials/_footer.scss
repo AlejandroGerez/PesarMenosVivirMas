@@ -3,6 +3,7 @@ footer {
   width: 100%;
   display: inline-block;
   @include mobile {
+    height: 100%;
   }
 
   &.footer-color-1 {

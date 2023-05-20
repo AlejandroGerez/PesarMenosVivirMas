@@ -28,6 +28,12 @@ html {
 header {
   background-color: coral;
 }
+@media screen and (max-width: 576px) {
+  header {
+    height: 100%;
+    width: 100%;
+  }
+}
 header img {
   height: 74px;
   transition: all 2s;
@@ -107,6 +113,11 @@ main .container-img img {
 main .container-img img:hover {
   transform: scale(1.05);
 }
+@media screen and (max-width: 576px) {
+  main .container-img img:hover {
+    transform: none;
+  }
+}
 main .container-img .imagen1 {
   height: 100%;
 }
@@ -139,6 +150,11 @@ footer {
   height: auto;
   width: 100%;
   display: inline-block;
+}
+@media screen and (max-width: 576px) {
+  footer {
+    height: 100%;
+  }
 }
 footer.footer-color-1 {
   background-color: coral;

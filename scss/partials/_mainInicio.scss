@@ -51,6 +51,9 @@ main {
 
       &:hover {
         transform: scale(1.05);
+        @include mobile {
+          transform: none;
+        }
       }
     }
 
