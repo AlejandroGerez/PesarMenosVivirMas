@@ -1,7 +1,7 @@
 main {
   ._container-sobremi {
     display: grid;
-    background-image: linear-gradient($color-primary, $color-secundary);
+    background-color: $color-tertiary;
     height: 100%;
     width: 100%;
     grid-template-columns: 3fr 2fr;
@@ -58,13 +58,15 @@ main {
     .texto-3 {
       grid-area: texto-3;
       text-align: center;
-      font-family: "MarlinRegular";
+      font-family: "Montserrat";
+      color: white;
     }
 
     .texto-4 {
       grid-area: texto-4;
       text-align: center;
-      font-family: "MarlinRegular";
+      font-family: "Montserrat";
+      color: white;
     }
 
     .foto-1,

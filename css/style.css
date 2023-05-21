@@ -14,6 +14,30 @@
   font-family: "Futurah";
   src: url(../fonts/FUTURAH.TTF);
 }
+@font-face {
+  font-family: "LatoRegular";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "LatoBold";
+  src: url(../fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: "MontserratItalic";
+  src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
 html {
   font-size: 62.5%;
 }
@@ -26,16 +50,15 @@ html {
 }
 
 header {
-  background-color: coral;
+  background-color: #000;
 }
 @media screen and (max-width: 576px) {
   header {
-    height: 100%;
     width: 100%;
   }
 }
 header img {
-  height: 74px;
+  height: 64px;
   transition: all 2s;
   animation-name: logo-giratorio;
   animation-iteration-count: infinite;
@@ -45,12 +68,25 @@ header nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  font-family: "GeraldtonLight";
+  font-family: "LatoRegular";
+}
+header nav ul li {
+  transform: 10s all;
 }
 header nav ul li a {
-  color: w;
+  text-decoration: none;
+  color: #ffffff;
+}
+header nav ul li a:hover {
+  color: rgb(16, 219, 170);
+  transform: scale(1.1);
+}
+@media screen and (max-width: 576px) {
+  header nav ul li a:hover {
+    transform: none;
+  }
 }
 
 @keyframes logo-giratorio {
@@ -70,18 +106,27 @@ main .container-titulo {
   color: white;
   font-weight: bold;
   font-size: 3rem;
-  font-family: "Futurah";
-  text-shadow: 3px 3px 6px black;
+  font-family: "Montserrat";
+  text-shadow: 4px 4px 7px black;
   z-index: 1;
 }
 main .container-titulo h1 {
-  font-size: 80px;
+  font-size: 70px;
   z-index: 1;
+}
+main .container-titulo h1 span {
+  color: rgb(16, 219, 170);
 }
 @media screen and (max-width: 576px) {
   main .container-titulo h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
+}
+main .container-titulo h2 {
+  font-weight: 600;
+}
+main .container-titulo h2 span {
+  color: rgb(16, 219, 170);
 }
 main .logo-wp img {
   height: 64px;
@@ -96,7 +141,7 @@ main .container-img {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  filter: brightness(0.6);
+  filter: brightness(0.4);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 576px) {
@@ -111,7 +156,7 @@ main .container-img img {
   transition: all 2s;
 }
 main .container-img img:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 @media screen and (max-width: 576px) {
   main .container-img img:hover {
@@ -128,10 +173,10 @@ main .botonunitealteam {
 }
 main .boton-unite, main .card .btn {
   padding: 15px 30px;
-  border: 1px solid #995309;
+  border: 1px solid black;
   border-radius: 6px;
-  background-color: #ee7410;
-  color: #fff;
+  background-color: rgb(16, 219, 170);
+  color: white;
   font-size: 2rem;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -153,23 +198,28 @@ footer {
 }
 @media screen and (max-width: 576px) {
   footer {
-    height: 100%;
+    width: 100%;
   }
 }
 footer.footer-color-1 {
-  background-color: coral;
+  background-color: #000;
 }
 footer.footer-color-2 {
-  background-image: linear-gradient(#ffffff, coral);
+  background-color: #000;
 }
 footer img {
   width: 64px;
 }
 footer .logo-footer {
   text-align: center;
+  color: #ffffff;
 }
 footer .texto-redes {
   text-align: center;
+  color: rgb(16, 219, 170);
+}
+footer .texto-final {
+  color: #ffffff;
 }
 footer ul {
   display: flex;
@@ -180,7 +230,16 @@ footer ul {
   justify-content: center;
 }
 footer ul li i {
-  color: #373737;
+  color: #ffffff;
+}
+footer ul li i:hover {
+  color: rgb(16, 219, 170);
+  transform: scale(1.1);
+}
+@media screen and (max-width: 576px) {
+  footer ul li i:hover {
+    transform: none;
+  }
 }
 footer .texto-final {
   text-align: center;
@@ -188,7 +247,7 @@ footer .texto-final {
 
 main ._container-sobremi {
   display: grid;
-  background-image: linear-gradient(coral, #ffffff);
+  background-color: #000;
   height: 100%;
   width: 100%;
   grid-template-columns: 3fr 2fr;
@@ -242,12 +301,14 @@ main ._container-sobremi .titulo-2 {
 main ._container-sobremi .texto-3 {
   grid-area: texto-3;
   text-align: center;
-  font-family: "MarlinRegular";
+  font-family: "Montserrat";
+  color: white;
 }
 main ._container-sobremi .texto-4 {
   grid-area: texto-4;
   text-align: center;
-  font-family: "MarlinRegular";
+  font-family: "Montserrat";
+  color: white;
 }
 main ._container-sobremi .foto-1,
 main ._container-sobremi .foto-2,

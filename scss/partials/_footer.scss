@@ -3,14 +3,14 @@ footer {
   width: 100%;
   display: inline-block;
   @include mobile {
-    height: 100%;
+    width: 100%;
   }
 
   &.footer-color-1 {
-    background-color: $color-primary;
+    background-color: $color-tertiary;
   }
   &.footer-color-2 {
-    background-image: linear-gradient($color-secundary, $color-primary);
+    background-color: $color-tertiary;
   }
 
   img {
@@ -19,10 +19,15 @@ footer {
 
   .logo-footer {
     text-align: center;
+    color: $color-secundary;
   }
 
   .texto-redes {
     text-align: center;
+    color: $color-textos;
+  }
+  .texto-final {
+    color: $color-secundary;
   }
 
   ul {
@@ -34,7 +39,14 @@ footer {
     justify-content: center;
     li {
       i {
-        color: #373737;
+        color: $color-secundary;
+        &:hover {
+          color: $color-textos;
+          transform: scale(1.1);
+          @include mobile {
+            transform: none;
+          }
+        }
       }
     }
   }

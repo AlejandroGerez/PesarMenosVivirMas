@@ -1,11 +1,10 @@
 header {
-  background-color: $color-primary;
+  background-color: $color-tertiary;
   @include mobile {
-    height: 100%;
     width: 100%;
   }
   img {
-    height: 74px;
+    height: 64px;
     transition: all 2s;
     animation-name: logo-giratorio;
     animation-iteration-count: infinite;
@@ -17,12 +16,21 @@ header {
       display: flex;
       list-style: none;
       gap: 20px;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
-      font-family: "GeraldtonLight";
+      font-family: "LatoRegular";
       li {
+        transform: 10s all;
         a {
-          color: w;
+          text-decoration: none;
+          color: $color-secundary;
+          &:hover {
+            color: $color-textos;
+            transform: scale(1.1);
+            @include mobile {
+              transform: none;
+            }
+          }
         }
       }
     }
