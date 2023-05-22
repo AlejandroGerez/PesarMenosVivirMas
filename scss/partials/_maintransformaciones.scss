@@ -1,9 +1,14 @@
 main {
-  background-image: linear-gradient($color-primary, $color-secundary);
+  background-color: $color-tertiary;
   .titulo_t {
-    font-family: "Futurah";
+    font-family: "Montserrat";
     text-align: center;
     font-size: 3rem;
+    .subtitulo {
+      font-family: "LatoRegular";
+      color: $color-textos;
+      font-size: 2.5rem;
+    }
     h1 {
       @include mobile {
         font-size: 3rem;

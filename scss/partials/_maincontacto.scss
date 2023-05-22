@@ -10,6 +10,9 @@ main {
   }
 
   h1 {
+    span {
+      color: $color-textos;
+    }
     font-weight: bold;
     font-size: 6rem;
     color: white;
@@ -29,7 +32,7 @@ main {
     }
     .form-label {
       display: block;
-      color: #ff851b;
+      color: $color-textos;
       font-size: 2rem;
       font-family: "Futurah";
       position: relative;
@@ -38,7 +41,7 @@ main {
       background-color: rgba(0, 0, 0, 0.7);
       border: none;
       outline: none;
-      border-bottom: 2px solid #ff851b;
+      border-bottom: 2px solid rgb(16, 219, 170);
       width: 100%;
       padding: 12px;
       margin-bottom: 20px;
@@ -51,7 +54,7 @@ main {
       background-color: rgba(0, 0, 0, 0.7);
       border: none;
       outline: none;
-      border-bottom: 2px solid #ff851b;
+      border-bottom: 2px solid rgb(16, 219, 170);
       width: 100%;
       padding: 12px;
       margin-bottom: 20px;
@@ -67,7 +70,7 @@ main {
       width: 100%;
       font-family: "Futurah";
       outline: none;
-      background: #ff851b;
+      background: rgb(16, 219, 170);
       font-size: 16px;
       border: none;
       color: #fff;
@@ -83,7 +86,7 @@ main {
       .form-title {
         font-weight: normal;
         font-family: "Futurah";
-        color: coral;
+        color: rgb(16, 219, 170);
         text-align: center;
         padding: 14px 0;
         span {

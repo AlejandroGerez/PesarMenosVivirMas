@@ -37,6 +37,10 @@ main {
     right: 0;
     bottom: 20px;
     margin: 10px;
+    @include mobile {
+      height: 42px;
+      margin: 20px;
+    }
   }
 
   .container-img {
@@ -47,6 +51,9 @@ main {
     filter: brightness(0.4);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     @include mobile {
+      .imagen2 {
+        max-width: 100%;
+      }
       .imagen1,
       .imagen3 {
         display: none;
@@ -82,10 +89,11 @@ main {
     border-radius: 6px;
     background-color: $color-textos;
     color: white;
-    font-size: 2rem;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
     cursor: pointer;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: "Montserrat";
     box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);

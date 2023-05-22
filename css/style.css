@@ -136,6 +136,12 @@ main .logo-wp img {
   bottom: 20px;
   margin: 10px;
 }
+@media screen and (max-width: 576px) {
+  main .logo-wp img {
+    height: 42px;
+    margin: 20px;
+  }
+}
 main .container-img {
   display: flex;
   flex-wrap: nowrap;
@@ -145,6 +151,9 @@ main .container-img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 576px) {
+  main .container-img .imagen2 {
+    max-width: 100%;
+  }
   main .container-img .imagen1,
   main .container-img .imagen3 {
     display: none;
@@ -177,10 +186,11 @@ main .boton-unite, main .card .btn {
   border-radius: 6px;
   background-color: rgb(16, 219, 170);
   color: white;
-  font-size: 2rem;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
   cursor: pointer;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Montserrat";
   box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 7px 11px 1px rgba(0, 0, 0, 0.75);
@@ -298,6 +308,9 @@ main ._container-sobremi .titulo-2 {
   font-family: "Futurah";
   margin-top: 50px;
 }
+main ._container-sobremi .titulo-2 span {
+  color: rgb(16, 219, 170);
+}
 main ._container-sobremi .texto-3 {
   grid-area: texto-3;
   text-align: center;
@@ -324,12 +337,17 @@ main ._container-sobremi .foto-3 {
 }
 
 main {
-  background-image: linear-gradient(coral, #ffffff);
+  background-color: #000;
 }
 main .titulo_t {
-  font-family: "Futurah";
+  font-family: "Montserrat";
   text-align: center;
   font-size: 3rem;
+}
+main .titulo_t .subtitulo {
+  font-family: "LatoRegular";
+  color: rgb(16, 219, 170);
+  font-size: 2.5rem;
 }
 @media screen and (max-width: 576px) {
   main .titulo_t h1 {
@@ -357,6 +375,9 @@ main .container-imagenes img {
   height: 100%;
 }
 
+main {
+  background-color: #000;
+}
 @media screen and (max-width: 576px) {
   main .container-cards {
     flex-direction: column;
@@ -364,11 +385,11 @@ main .container-imagenes img {
   }
 }
 main .card {
-  box-shadow: 0px 0px 36px -3px rgba(0, 0, 0, 0.66);
-  -webkit-box-shadow: 0px 0px 36px -3px rgba(0, 0, 0, 0.66);
-  -moz-box-shadow: 0px 0px 36px -3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 0px 36px -3px rgb(16, 219, 170);
+  -webkit-box-shadow: 0px 0px 36px -3px rgb(16, 219, 170);
+  -moz-box-shadow: 0px 0px 36px -3px rgb(16, 219, 170);
   margin: 20px;
-  background-color: black;
+  background-color: white;
   border-radius: 10px;
 }
 main .card img {
@@ -378,7 +399,7 @@ main .card h5 {
   font-size: 1.7rem;
   text-align: center;
   font-family: "Futurah";
-  color: white;
+  color: #000;
 }
 main .card .precio-card {
   font-size: 3rem;
@@ -387,14 +408,14 @@ main .card .precio-card {
   color: coral;
 }
 main .card .card-text {
-  color: white;
+  color: #000;
   text-align: center;
   font-size: 1.5rem;
   font-family: "MarlinRegular";
 }
 main .card .btn {
   padding: 10px 20px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 main .parallax {
@@ -411,6 +432,9 @@ main h1 {
   color: white;
   text-shadow: 3px 3px 6px black;
 }
+main h1 span {
+  color: rgb(16, 219, 170);
+}
 main form {
   background-color: rgba(0, 0, 0, 0.6);
   width: 90%;
@@ -426,7 +450,7 @@ main form .form-title {
 }
 main form .form-label {
   display: block;
-  color: #ff851b;
+  color: rgb(16, 219, 170);
   font-size: 2rem;
   font-family: "Futurah";
   position: relative;
@@ -435,7 +459,7 @@ main form .form-input {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
   outline: none;
-  border-bottom: 2px solid #ff851b;
+  border-bottom: 2px solid rgb(16, 219, 170);
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
@@ -448,7 +472,7 @@ main form textarea {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
   outline: none;
-  border-bottom: 2px solid #ff851b;
+  border-bottom: 2px solid rgb(16, 219, 170);
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
@@ -464,7 +488,7 @@ main form .btn-submit {
   width: 100%;
   font-family: "Futurah";
   outline: none;
-  background: #ff851b;
+  background: rgb(16, 219, 170);
   font-size: 16px;
   border: none;
   color: #fff;
@@ -479,7 +503,7 @@ main form .btn-submit:hover {
 main form .form-header .form-title {
   font-weight: normal;
   font-family: "Futurah";
-  color: coral;
+  color: rgb(16, 219, 170);
   text-align: center;
   padding: 14px 0;
 }

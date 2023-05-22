@@ -49,6 +49,9 @@ main {
     }
 
     .titulo-2 {
+      span {
+        color: $color-textos;
+      }
       grid-area: titulo-2;
       text-align: center;
       font-family: "Futurah";
