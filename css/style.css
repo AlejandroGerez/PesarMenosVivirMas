@@ -397,6 +397,21 @@ main .container-imagenes img {
 main {
   background-color: #000;
 }
+main .titulo-team {
+  text-align: center;
+  justify-items: center;
+}
+main .titulo-team h1 {
+  font-family: "Montserrat";
+}
+@media screen and (max-width: 576px) {
+  main .titulo-team h1 {
+    font-size: 4rem;
+  }
+}
+main .titulo-team h1 h2 {
+  font-family: "RobotoRegular";
+}
 @media screen and (max-width: 576px) {
   main .container-cards {
     flex-direction: column;

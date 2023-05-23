@@ -1,5 +1,18 @@
 main {
   background-color: $color-tertiary;
+  .titulo-team {
+    text-align: center;
+    justify-items: center;
+    h1 {
+      font-family: "Montserrat";
+      @include mobile {
+        font-size: 4rem;
+      }
+      h2 {
+        font-family: "RobotoRegular";
+      }
+    }
+  }
   .container-cards {
     @include mobile {
       flex-direction: column;
