@@ -8,10 +8,13 @@ main {
       font-family: "LatoRegular";
       color: $color-textos;
       font-size: 2.5rem;
+      @include mobile {
+        font-size: 1.5rem;
+      }
     }
     h1 {
       @include mobile {
-        font-size: 3rem;
+        font-size: 2rem;
       }
     }
   }
@@ -25,7 +28,7 @@ main {
     grid-template-columns: repeat(4, 300px);
     grid-template-rows: repeat(3, 300px);
     @include mobile {
-      grid-template-columns: 400px;
+      grid-template-columns: 300px;
       grid-template-rows: auto;
     }
   }

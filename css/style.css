@@ -293,7 +293,7 @@ main ._container-sobremi .carrusel-1 {
 }
 @media screen and (max-width: 576px) {
   main ._container-sobremi .carrusel-1 {
-    height: 300px;
+    height: auto;
     width: auto;
     margin: 10px;
   }
@@ -375,8 +375,13 @@ main .titulo_t .subtitulo {
   font-size: 2.5rem;
 }
 @media screen and (max-width: 576px) {
+  main .titulo_t .subtitulo {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
   main .titulo_t h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 main .container-imagenes {
@@ -391,7 +396,7 @@ main .container-imagenes {
 }
 @media screen and (max-width: 576px) {
   main .container-imagenes {
-    grid-template-columns: 400px;
+    grid-template-columns: 300px;
     grid-template-rows: auto;
   }
 }
