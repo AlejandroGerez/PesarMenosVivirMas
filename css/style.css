@@ -123,7 +123,7 @@ main .container-titulo h1 span {
 }
 @media screen and (max-width: 576px) {
   main .container-titulo h1 {
-    font-size: 30px;
+    font-size: 25px;
     display: inline-block;
   }
 }
@@ -295,6 +295,7 @@ main ._container-sobremi .carrusel-1 {
   main ._container-sobremi .carrusel-1 {
     height: 300px;
     width: auto;
+    margin: 10px;
   }
 }
 main ._container-sobremi .carrusel-1 .foto-4 iframe {
@@ -304,7 +305,7 @@ main ._container-sobremi .carrusel-1 .foto-4 iframe {
 @media screen and (max-width: 576px) {
   main ._container-sobremi .carrusel-1 .foto-4 iframe {
     width: 455px;
-    height: 360px;
+    height: 300px;
   }
 }
 main ._container-sobremi .titulo-2 {
@@ -324,6 +325,11 @@ main ._container-sobremi .texto-3 h3 {
   font-family: "LatoLight";
   color: white;
   margin: 10px;
+}
+@media screen and (max-width: 576px) {
+  main ._container-sobremi .texto-3 h3 {
+    margin: 20px;
+  }
 }
 main ._container-sobremi .texto-3 h3 span {
   font-weight: 600;
