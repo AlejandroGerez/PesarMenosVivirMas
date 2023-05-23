@@ -13,7 +13,7 @@ main {
     @include mobile {
       display: grid;
       height: auto;
-      width: 475px;
+      width: auto;
       grid-template-columns: auto;
       grid-template-rows: auto;
       grid-template-areas:
@@ -60,16 +60,30 @@ main {
 
     .texto-3 {
       grid-area: texto-3;
-      text-align: center;
-      font-family: "Montserrat";
-      color: white;
+      h3 {
+        text-align: center;
+        font-family: "LatoLight";
+        color: white;
+        margin: 10px;
+        span {
+          font-weight: 600;
+          color: $color-textos;
+        }
+      }
     }
 
     .texto-4 {
       grid-area: texto-4;
-      text-align: center;
-      font-family: "Montserrat";
-      color: white;
+      h3 {
+        text-align: center;
+        font-family: "LatoLight";
+        color: white;
+        margin: 10px;
+        span {
+          font-weight: 600;
+          color: $color-textos;
+        }
+      }
     }
 
     .foto-1,

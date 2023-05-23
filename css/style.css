@@ -38,6 +38,10 @@
   font-family: "RobotoBold";
   src: url(../fonts/Roboto-Bold.ttf);
 }
+@font-face {
+  font-family: "LatoLight";
+  src: url(../fonts/Lato-Light.ttf);
+}
 html {
   font-size: 62.5%;
 }
@@ -268,7 +272,7 @@ main ._container-sobremi {
   main ._container-sobremi {
     display: grid;
     height: auto;
-    width: 475px;
+    width: auto;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: "carrusel-1" "titulo-2" "texto-3" "texto-4";
@@ -313,15 +317,29 @@ main ._container-sobremi .titulo-2 span {
 }
 main ._container-sobremi .texto-3 {
   grid-area: texto-3;
+}
+main ._container-sobremi .texto-3 h3 {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "LatoLight";
   color: white;
+  margin: 10px;
+}
+main ._container-sobremi .texto-3 h3 span {
+  font-weight: 600;
+  color: rgb(16, 219, 170);
 }
 main ._container-sobremi .texto-4 {
   grid-area: texto-4;
+}
+main ._container-sobremi .texto-4 h3 {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "LatoLight";
   color: white;
+  margin: 10px;
+}
+main ._container-sobremi .texto-4 h3 span {
+  font-weight: 600;
+  color: rgb(16, 219, 170);
 }
 main ._container-sobremi .foto-1,
 main ._container-sobremi .foto-2,
