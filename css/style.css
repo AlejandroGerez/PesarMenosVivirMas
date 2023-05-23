@@ -124,6 +124,7 @@ main .container-titulo h1 span {
 @media screen and (max-width: 576px) {
   main .container-titulo h1 {
     font-size: 30px;
+    display: inline-block;
   }
 }
 main .container-titulo h2 {
@@ -142,8 +143,8 @@ main .logo-wp img {
 }
 @media screen and (max-width: 576px) {
   main .logo-wp img {
-    height: 42px;
-    margin: 20px;
+    height: 48px;
+    margin: 10px;
   }
 }
 main .container-img {

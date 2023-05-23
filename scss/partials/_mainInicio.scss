@@ -20,6 +20,7 @@ main {
       z-index: 1;
       @include mobile {
         font-size: 30px;
+        display: inline-block;
       }
     }
     h2 {
@@ -38,8 +39,8 @@ main {
     bottom: 20px;
     margin: 10px;
     @include mobile {
-      height: 42px;
-      margin: 20px;
+      height: 48px;
+      margin: 10px;
     }
   }
 
