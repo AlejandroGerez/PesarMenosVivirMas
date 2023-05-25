@@ -271,7 +271,7 @@ main ._container-sobremi {
 }
 @media screen and (max-width: 576px) {
   main ._container-sobremi {
-    grid-template-columns: 460px;
+    grid-template-columns: 400px;
     grid-template-rows: auto;
     grid-template-areas: "titulo-2" "carrusel-1" "texto-3" "texto-4" "video-cdp";
   }
@@ -281,11 +281,6 @@ main ._container-sobremi .carrusel-1 {
   height: 100%;
   width: 100%;
   padding: 20px;
-}
-@media screen and (max-width: 576px) {
-  main ._container-sobremi .carrusel-1 {
-    margin-left: 10px;
-  }
 }
 main ._container-sobremi .titulo-2 {
   grid-area: titulo-2;
@@ -321,7 +316,7 @@ main ._container-sobremi .texto-3 h3 {
 }
 @media screen and (max-width: 576px) {
   main ._container-sobremi .texto-3 h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0;
     padding: 10px;
   }
@@ -345,7 +340,7 @@ main ._container-sobremi .texto-4 h3 {
 }
 @media screen and (max-width: 576px) {
   main ._container-sobremi .texto-4 h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0;
     padding: 10px;
   }
@@ -359,11 +354,12 @@ main ._container-sobremi .video-cdp {
   width: 100%;
   grid-area: video-cdp;
 }
-main ._container-sobremi .video-cdp iframe {
-  width: 400px;
-  height: 200px;
-  margin-left: 40px;
-  margin-bottom: 10px;
+@media screen and (max-width: 576px) {
+  main ._container-sobremi .video-cdp iframe {
+    width: 350px;
+    height: 150px;
+    margin-left: 20px;
+  }
 }
 main ._container-sobremi .foto-1,
 main ._container-sobremi .foto-2,
