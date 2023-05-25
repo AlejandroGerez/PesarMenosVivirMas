@@ -167,15 +167,6 @@ main .container-img {
 main .container-img img {
   max-width: 450px;
   width: 100vh;
-  transition: all 2s;
-}
-main .container-img img:hover {
-  transform: scale(1.04);
-}
-@media screen and (max-width: 576px) {
-  main .container-img img:hover {
-    transform: none;
-  }
 }
 main .container-img .imagen1 {
   height: 100%;
