@@ -271,7 +271,7 @@ main ._container-sobremi {
 }
 @media screen and (max-width: 576px) {
   main ._container-sobremi {
-    grid-template-columns: 350px;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: "titulo-2" "carrusel-1" "texto-3" "texto-4" "video-cdp";
   }
@@ -364,9 +364,9 @@ main ._container-sobremi .video-cdp {
 }
 @media screen and (max-width: 576px) {
   main ._container-sobremi .video-cdp iframe {
-    width: 300px;
+    width: auto;
     height: 150px;
-    margin-left: 20px;
+    margin-left: 80px;
   }
 }
 main ._container-sobremi .foto-1,
