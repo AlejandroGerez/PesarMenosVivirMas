@@ -273,7 +273,7 @@ main ._container-sobremi {
   main ._container-sobremi {
     display: grid;
     height: auto;
-    width: auto;
+    max-width: 500px;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: "carrusel-1" "titulo-2" "texto-3" "texto-4";
@@ -294,7 +294,7 @@ main ._container-sobremi .carrusel-1 {
 @media screen and (max-width: 576px) {
   main ._container-sobremi .carrusel-1 {
     height: auto;
-    width: auto;
+    max-width: 450px;
     margin: 10px;
   }
 }
@@ -304,7 +304,7 @@ main ._container-sobremi .carrusel-1 .foto-4 iframe {
 }
 @media screen and (max-width: 576px) {
   main ._container-sobremi .carrusel-1 .foto-4 iframe {
-    width: 455px;
+    max-width: 450px;
     height: 300px;
   }
 }
@@ -313,6 +313,14 @@ main ._container-sobremi .titulo-2 {
   text-align: center;
   font-family: "Futurah";
   margin-top: 50px;
+}
+main ._container-sobremi .titulo-2 h1 {
+  font-size: 5rem;
+}
+@media screen and (max-width: 576px) {
+  main ._container-sobremi .titulo-2 h1 {
+    font-size: 2.5rem;
+  }
 }
 main ._container-sobremi .titulo-2 span {
   color: rgb(16, 219, 170);
@@ -329,6 +337,7 @@ main ._container-sobremi .texto-3 h3 {
 @media screen and (max-width: 576px) {
   main ._container-sobremi .texto-3 h3 {
     margin: 20px;
+    font-size: 1.5rem;
   }
 }
 main ._container-sobremi .texto-3 h3 span {
@@ -343,6 +352,11 @@ main ._container-sobremi .texto-4 h3 {
   font-family: "LatoLight";
   color: white;
   margin: 10px;
+}
+@media screen and (max-width: 576px) {
+  main ._container-sobremi .texto-4 h3 {
+    font-size: 1.5rem;
+  }
 }
 main ._container-sobremi .texto-4 h3 span {
   font-weight: 600;
