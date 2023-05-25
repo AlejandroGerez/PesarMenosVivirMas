@@ -2,79 +2,69 @@ main {
   ._container-sobremi {
     display: grid;
     background-color: $color-tertiary;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
     grid-template-areas:
-      "carrusel-1 titulo-2"
+      "titulo-2 titulo-2"
       "carrusel-1 texto-3"
-      "carrusel-1 texto-4";
+      "texto-4 video-cdp"
+      "texto-4 video-cdp";
     @include mobile {
-      display: grid;
-      height: auto;
-      max-width: 500px;
-      grid-template-columns: auto;
+      grid-template-columns: 460px;
       grid-template-rows: auto;
       grid-template-areas:
-        "carrusel-1"
         "titulo-2"
+        "carrusel-1"
         "texto-3"
-        "texto-4";
+        "texto-4"
+        "video-cdp";
     }
+
     .carrusel-1 {
       grid-area: carrusel-1;
-      max-height: 450px;
-      max-width: auto;
-      margin-top: 30px;
-      margin-left: 20px;
-      margin-right: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-      -webkit-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
-      -moz-box-shadow: 0px 0px 15px 8px rgba(43, 42, 42, 0.75);
+      height: 100%;
+      width: 100%;
+      padding: 20px;
       @include mobile {
-        height: auto;
-        max-width: 450px;
-        margin: 10px;
-      }
-
-      .foto-4 iframe {
-        height: 450px;
-        width: 780px;
-        @include mobile {
-          max-width: 450px;
-          height: 300px;
-        }
+        margin-left: 10px;
       }
     }
 
     .titulo-2 {
+      grid-area: titulo-2;
+      text-align: center;
+      font-family: "Futurah";
+      margin-top: 50px;
+      height: 100%;
+      width: 100%;
       h1 {
         font-size: 5rem;
         @include mobile {
-          font-size: 2.5rem;
+          font-size: 2rem;
         }
       }
       span {
         color: $color-textos;
       }
-      grid-area: titulo-2;
-      text-align: center;
-      font-family: "Futurah";
-      margin-top: 50px;
     }
 
     .texto-3 {
+      height: 100%;
+      width: 100%;
       grid-area: texto-3;
       h3 {
         text-align: center;
         font-family: "LatoLight";
         color: white;
         margin: 10px;
+        margin-top: 100px;
+        font-size: 2rem;
         @include mobile {
-          margin: 20px;
-          font-size: 1.5rem;
+          font-size: 1rem;
+          margin: 0;
+          padding: 10px;
         }
         span {
           font-weight: 600;
@@ -84,14 +74,20 @@ main {
     }
 
     .texto-4 {
+      height: 100%;
+      width: 100%;
       grid-area: texto-4;
       h3 {
         text-align: center;
         font-family: "LatoLight";
         color: white;
         margin: 10px;
+        margin-top: 50px;
+        font-size: 2rem;
         @include mobile {
-          font-size: 1.5rem;
+          font-size: 1rem;
+          margin: 0;
+          padding: 10px;
         }
         span {
           font-weight: 600;
@@ -100,12 +96,24 @@ main {
       }
     }
 
+    .video-cdp {
+      height: 100%;
+      width: 100%;
+      grid-area: video-cdp;
+      iframe {
+        width: 400px;
+        height: 200px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+      }
+    }
+
     .foto-1,
     .foto-2,
     .foto-3 {
       height: 450px;
       @include mobile {
-        height: 360px;
+        height: 200px;
       }
     }
   }
