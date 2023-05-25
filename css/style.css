@@ -326,6 +326,7 @@ main ._container-sobremi .texto-3 h3 {
     width: 90%;
     font-size: 1.5rem;
     text-align: center;
+    margin: 0;
   }
 }
 main ._container-sobremi .texto-3 h3 span {
@@ -350,6 +351,7 @@ main ._container-sobremi .texto-4 h3 {
     width: 90%;
     font-size: 1.5rem;
     text-align: center;
+    margin: 0;
   }
 }
 main ._container-sobremi .texto-4 h3 span {
@@ -449,8 +451,13 @@ main .titulo-team h1 {
 }
 main .titulo-team h2 {
   font-family: "RobotoRegular";
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: rgb(16, 219, 170);
+}
+@media screen and (max-width: 576px) {
+  main .titulo-team h2 {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 576px) {
   main .container-cards {
