@@ -365,7 +365,7 @@ main ._container-sobremi .video-cdp {
 @media screen and (max-width: 576px) {
   main ._container-sobremi .video-cdp iframe {
     width: 300px;
-    height: 1px;
+    height: 150px;
     margin-left: 20px;
   }
 }

@@ -106,7 +106,7 @@ main {
       iframe {
         @include mobile {
           width: 300px;
-          height: 1px;
+          height: 150px;
           margin-left: 20px;
         }
       }
