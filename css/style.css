@@ -322,10 +322,9 @@ main ._container-sobremi .texto-3 h3 {
 }
 @media screen and (max-width: 576px) {
   main ._container-sobremi .texto-3 h3 {
-    width: 100%;
+    width: 90%;
     font-size: 1.5rem;
-    margin: 0;
-    padding: 10px;
+    text-align: center;
   }
 }
 main ._container-sobremi .texto-3 h3 span {
@@ -347,10 +346,9 @@ main ._container-sobremi .texto-4 h3 {
 }
 @media screen and (max-width: 576px) {
   main ._container-sobremi .texto-4 h3 {
-    width: 100%;
+    width: 90%;
     font-size: 1.5rem;
-    margin: 0;
-    padding: 10px;
+    text-align: center;
   }
 }
 main ._container-sobremi .texto-4 h3 span {
@@ -366,7 +364,7 @@ main ._container-sobremi .video-cdp {
   main ._container-sobremi .video-cdp iframe {
     width: auto;
     height: 150px;
-    margin-left: 80px;
+    margin-left: 50px;
   }
 }
 main ._container-sobremi .foto-1,
