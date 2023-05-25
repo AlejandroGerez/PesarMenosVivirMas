@@ -2,6 +2,7 @@ main {
   ._container-sobremi {
     display: grid;
     background-color: $color-tertiary;
+    padding: 10px;
     row-gap: 10px;
     column-gap: 10px;
     grid-template-columns: 2fr 2fr;
@@ -105,7 +106,7 @@ main {
         @include mobile {
           width: auto;
           height: 150px;
-          margin-left: 50px;
+          margin-left: 30px;
         }
       }
     }
