@@ -416,13 +416,20 @@ main .container-imagenes {
 }
 @media screen and (max-width: 576px) {
   main .container-imagenes {
-    grid-template-columns: 90%;
+    grid-template-columns: auto;
     grid-template-rows: auto;
   }
 }
 main .container-imagenes img {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 576px) {
+  main .container-imagenes img {
+    width: 90%;
+    height: auto;
+    margin: 20px;
+  }
 }
 
 main {
